@@ -1,6 +1,7 @@
+Make a folder named outs where the detected photos will be saved
 Usage Example:
 
-python liveness_demo.py --video_path test_shubham.mp4 --output_folder  outs --skip 10
+python liveness_test.py --video_path test_shubham.mp4 --output_folder  outs --skip 10
 python liveness_test_softmax.py --video_path test_nilesh.mp4 --output_folder  outs --skip 10
 
 Reads test_shubham.mp4 by skipping every 10 frames and saving the processed frames in 'outs' folder
@@ -8,7 +9,9 @@ Reads test_shubham.mp4 by skipping every 10 frames and saving the processed fram
 
 
 # set video_path to 0 for using webcam
-python liveness_demo.py --video_path 0 --output_folder  outs
+python liveness_test.py --video_path 0 --output_folder  outs
 
 # set output_path to 0 for displaying frames
-python liveness_demo.py --video_path test.mp4 --output_folder  0
+python liveness_test.py --video_path test.mp4 --output_folder  0
+
+This is just a side branch, main brach includes speech emotion hybrid face anti spoofing recognition, will be adding soon
